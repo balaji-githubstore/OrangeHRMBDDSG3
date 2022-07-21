@@ -9,6 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		,monochrome = true
 		,publish = false
 		,plugin = {"html:target/cucumber-report.html"}
+		//,dryRun = true
 		)
 
 public class RunnerTest extends AbstractTestNGCucumberTests {

@@ -44,10 +44,18 @@ public class Demo1 {
 
 	@Then("I should get access to the portal with url as {string}")
 	public void i_should_get_access_to_the_portal_with_url_as(String expectedUrl) {
-
+		
 		Assert.assertEquals(driver.getCurrentUrl(), expectedUrl);
 	}
+	
+	@Then("I should not get access to the portal with error as {string}")
+	public void i_should_not_get_access_to_the_portal_with_error_as(String expectedError) {
+	    
+		String actualError=driver.findElement(By.id("spanMessage")).getText();
+		Assert.assertTrue(actualError.contains(expectedError)); //should be true
+	}
 
+//will start at 4:20 PM IST
 }
 
 
