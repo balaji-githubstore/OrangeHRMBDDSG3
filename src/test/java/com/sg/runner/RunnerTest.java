@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = {"src/test/resources/feature/Login.feature"}
-		,glue = {"com.sg.steps"}
+		,glue = {"com.sg.steps","com.sg.hooks"}
 		,monochrome = true
 		,publish = false
 		,plugin = {"html:target/cucumber-report.html"}

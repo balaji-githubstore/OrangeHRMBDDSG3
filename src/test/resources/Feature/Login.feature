@@ -19,5 +19,5 @@ Feature: Login
 
     Examples: 
       | username | password |
-      | Peter    | Peter123 |
-      | John     | John123  |
+      | peter    | peter123 |
+      | john     | john123  |
