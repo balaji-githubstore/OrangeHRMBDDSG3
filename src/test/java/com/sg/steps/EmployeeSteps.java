@@ -43,17 +43,17 @@ public class EmployeeSteps {
 	    String image=lists.get(0).get("photograph");
 	    
 	    AutomationHooks.driver.findElement(By.id("firstName")).sendKeys(firstName);
-	    
+	    //fill the form
 	}
 	@When("I click on save")
 	public void i_click_on_save() {
 	    
-	    
+	    //click on save
 	}
 	@Then("I should see the added employee details")
 	public void i_should_see_the_added_employee_details() {
 	    
-	    
+	    //will do it tomorrow
 	}
 
 }
