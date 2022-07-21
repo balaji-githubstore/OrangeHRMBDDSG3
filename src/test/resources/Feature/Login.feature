@@ -1,8 +1,10 @@
+@login
 Feature: Login
   In order to maintain the employees records 
   As an admin
   I want to login to the orange HRM dashboard
 
+  @valid @high
   Scenario: Valid Credential
     Given I have browser with OrangeHRM application
     When I enter username as 'Admin'
@@ -10,6 +12,7 @@ Feature: Login
     And I click on login
     Then I should get access to the portal with url as 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
 
+  @invalid @low
   Scenario Outline: Invalid Credential
     Given I have browser with OrangeHRM application
     When I enter username as '<username>'
@@ -21,3 +24,4 @@ Feature: Login
       | username | password |
       | peter    | peter123 |
       | john     | john123  |
+
