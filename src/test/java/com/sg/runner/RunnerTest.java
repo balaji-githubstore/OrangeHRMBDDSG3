@@ -5,6 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = {"src/test/resources/feature/Login.feature"}
+		,glue = {"com.sg.steps"}
+		,monochrome = true
+		,publish = false
+		,plugin = {"html:target/cucumber-report.html"}
 		)
 
 public class RunnerTest extends AbstractTestNGCucumberTests {
