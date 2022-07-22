@@ -13,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 	
-public class Demo1 {
+public class LoginSteps {
 	
 	@Given("I have browser with OrangeHRM application")
 	public void i_have_browser_with_orange_hrm_application() {

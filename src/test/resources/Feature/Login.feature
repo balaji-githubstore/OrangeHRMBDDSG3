@@ -4,9 +4,11 @@ Feature: Login
   As an admin
   I want to login to the orange HRM dashboard
 
+  Background: 
+    Given I have browser with OrangeHRM application
+
   @valid @high
   Scenario: Valid Credential
-    Given I have browser with OrangeHRM application
     When I enter username as 'Admin'
     And I enter password as 'admin123'
     And I click on login
@@ -14,7 +16,6 @@ Feature: Login
 
   @invalid @low
   Scenario Outline: Invalid Credential
-    Given I have browser with OrangeHRM application
     When I enter username as '<username>'
     And I enter password as '<password>'
     And I click on login
@@ -24,4 +25,3 @@ Feature: Login
       | username | password |
       | peter    | peter123 |
       | john     | john123  |
-

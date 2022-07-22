@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = {"src/test/resources/Feature"}
+		features = {"@target/rerun.txt"}
 		,glue = {"com.sg.steps","com.sg.hooks"}
 		,monochrome = true
 		//,publish = true
@@ -13,6 +13,6 @@ import io.cucumber.testng.CucumberOptions;
 		,tags = "@login"
 		)
 
-public class RunnerTest extends AbstractTestNGCucumberTests {
+public class RunnerFailedTest extends AbstractTestNGCucumberTests {
 
 }
