@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 		//,publish = true
 		,plugin = {"rerun:target/rerun.txt","html:target/cucumber-report.html"}
 		//,dryRun = true
-		,tags = "@login"
+//		,tags = "@login"
 		)
 
 public class RunnerTest extends AbstractTestNGCucumberTests {
